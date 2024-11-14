@@ -9,7 +9,7 @@ export default function AdminPage() {
   useEffect(() => {
     const fetchLoans = async () => {
       try {
-        const response = await axios.get(`http://localhost:5555/loans`);
+        const response = await axios.get(`http://172.31.13.143:5555/loans`);
         if (response.status === 200) {
           setLoans(response.data); // Store the loans in state
         }
@@ -26,7 +26,7 @@ export default function AdminPage() {
   const handleChangeStatus = async (loanId) => {
     try {
       // Here we use the _id to make the API call
-      const response = await axios.put(`http://localhost:5555/loans/${loanId}/status`);
+      const response = await axios.put(`http://172.31.13.143:5555/loans/${loanId}/status`);
       if (response.status === 200) {
         // Update the status of the loan in the state
         const updatedLoan = response.data;

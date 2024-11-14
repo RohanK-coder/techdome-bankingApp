@@ -28,7 +28,7 @@ export default function Registration() {
 
     try {
       // Send POST request to backend (using axios or fetch)
-      const response = await axios.post("http://localhost:5555/login/users", user); // Change URL as needed
+      const response = await axios.post("http://172.31.13.143:5555/login/users", user); // Change URL as needed
 
       if (response.status === 201) {
         setMessage("User added successfully! - now please continue with login.");
@@ -52,7 +52,7 @@ export default function Registration() {
     }
 
     try {
-      const response = await axios.get(`http://localhost:5555/login/users/${loginId}`)
+      const response = await axios.get(`http://172.31.13.143:5555/login/users/${loginId}`)
 
       if(response.status == 200){
         navigate('/customerpage')
