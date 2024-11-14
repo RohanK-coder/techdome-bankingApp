@@ -6,6 +6,7 @@ import loanRoutes from "./routes/loanRoutes.js"
 import userRoutes from "./routes/userRoutes.js"
 
 const app = express();
+const ip = "172.31.13.143";
 app.use(express.json());
 app.use(cors());
 app.use("/loans",loanRoutes)
@@ -20,7 +21,7 @@ mongoose
     .connect(mongoDBURL)
     .then(()=>{
         console.log("Database Connected Successfully");
-        app.listen(PORT,()=>{
+        app.listen(PORT,ip,()=>{
             console.log(`App is listening on port: ${PORT}`);
         })
     })
