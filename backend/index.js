@@ -6,7 +6,7 @@ import loanRoutes from "./routes/loanRoutes.js"
 import userRoutes from "./routes/userRoutes.js"
 
 const app = express();
-const ip = "172.31.13.143";
+const ip = "13.233.199.127";
 app.use(express.json());
 app.use(cors());
 app.use("/loans",loanRoutes)

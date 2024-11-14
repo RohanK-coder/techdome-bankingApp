@@ -35,7 +35,7 @@ export default function CustomerPage() {
 
     try {
       // Send POST request to the backend API
-      const response = await axios.post(`http://172.31.13.143:5555/loans/${loginId}`, loanData);
+      const response = await axios.post(`http://13.233.199.127:5555/loans/${loginId}`, loanData);
 
       if (response.status === 201) {
         // Loan successfully created
@@ -62,7 +62,7 @@ export default function CustomerPage() {
   useEffect(() => {
     const fetchLoans = async () => {
       try {
-        const response = await axios.get(`http://172.31.13.143:5555/loans/${loginId}`);
+        const response = await axios.get(`http://13.233.199.127:5555/loans/${loginId}`);
         if (response.status === 200) {
           setLoans(response.data); // Store the loans in state
         }
