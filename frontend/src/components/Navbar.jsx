@@ -34,7 +34,7 @@ export default function Navbar() {
     <a className="btn btn-ghost text-xl"><Link to={"/"}>Banking Application</Link></a>
   </div>
   <div className="navbar-end">
-    <h1 className='mr-5'><Link to={"/"}>Sign Out</Link></h1>
+    <h1 className='mr-5 text-lg mt-3'><Link to={"/"}>Sign Out</Link></h1>
   </div>
 </div>
       </>

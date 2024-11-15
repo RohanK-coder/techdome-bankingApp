@@ -2,6 +2,7 @@ import React from 'react'
 import { useLogin } from '../../context/LoginContext';
 import { useState,useEffect } from 'react';
 import axios from 'axios';
+import './CustomerPage.css'
 export default function CustomerPage() {
   const [message, setMessage] = useState('');
   const [loans, setLoans] = useState([]);
@@ -87,9 +88,9 @@ export default function CustomerPage() {
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder='amount' value={amount} onChange={handleAmount} className='p-1 gap-4 mr-3 mt-3 mb-3 rounded-md bg-white text-black'/>
         <input type="text" placeholder='term in months' value={term} onChange={handleTerm} className='p-1 gap-4 mr-3 mt-3 mb-3 rounded-md bg-white text-black'/>
-        <button type="submit" className='gap-4 m-3 rounded-mg border-solid bg-red-500 text-white pr-4 pl-4 pt-2 pb-2'>Request loan</button>
+        <button type="submit" className='gap-4 mt-3  rounded-mg border-solid bg-red-500 text-white pr-4 pl-4 pt-2 pb-2'>Request loan</button>
       </form>
-      <div className="bg-neutral-600 text-white">
+      <div className="bg-neutral-600 text-black">
   <table className="table">
     {/* head */}
     <thead>

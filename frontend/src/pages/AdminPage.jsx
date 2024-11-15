@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'; // Make sure to import axios
+import './AdminPage.css'
 
 export default function AdminPage() {
   const [loans, setLoans] = useState([]);
@@ -49,7 +50,7 @@ export default function AdminPage() {
   return (
     <div className='admin-dashboard'>
       <h1  className='p-3 gap-4 m-3 rounded-md text-3xl '>Admin Dashboard</h1>
-      <div className="bg-neutral-600 text-white">
+      <div className="bg-neutral-600 text-black">
       {/* Display message if there's an error */}
       {message && <p>{message}</p>}
 

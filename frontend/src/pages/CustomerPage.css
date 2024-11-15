@@ -1,0 +1,146 @@
+/* CustomerPage.css */
+.customer {
+  padding: 20px;
+}
+
+.customer-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 12px;
+  background-color: #f56565;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+button:hover {
+  background-color: #e53e3e;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #4a5568;
+  color: white;
+}
+
+td {
+  background-color: #f7fafc;
+}
+
+.bg-neutral-600 {
+  background-color: #2d3748;
+}
+
+/* Media Query for screens smaller than 768px (tablets and mobile devices) */
+@media (max-width: 768px) {
+  .customer-page {
+    padding: 10px;
+    width: 100%;
+  }
+
+  h1 {
+
+    text-align: center;
+  }
+
+  form {
+    gap: 15px;
+    padding: 10px;
+  }
+
+  input {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 1.1rem;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+}
+
+/* Media Query for screens smaller than 480px (small mobile phones) */
+@media (max-width: 480px) {
+  .customer-page {
+    padding: 5px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  form {
+    gap: 10px;
+  }
+
+  input {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  table {
+    font-size: 0.85rem;
+  }
+
+  th, td {
+    padding: 6px;
+  }
+}

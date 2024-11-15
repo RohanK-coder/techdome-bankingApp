@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import axios from 'axios';
 import { useLogin } from '../../context/LoginContext';
 import { useNavigate } from 'react-router-dom';
+import './Registration.css'
 
 export default function Registration() {
 

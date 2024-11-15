@@ -20,7 +20,7 @@ export default function App() {
    <Navbar/>
    <Routes>
     <Route path='/' element={<Home/>}/>
-    <Route path='/signin' element={<Registration/>}/>
+
     <Route path='/customerpage' element={<CustomerPage/>}/>
     <Route path='/adminlogin' element={<AdminLogin/>}/>
     <Route path='/adminpage' element={<AdminPage/>}/>
@@ -29,6 +29,9 @@ export default function App() {
 
    </Routes>
    <Footer/>
+   <Routes>
+   <Route path='/signin' element={<Registration/>}/>
+   </Routes>
    </LoginProvider>
 
 
