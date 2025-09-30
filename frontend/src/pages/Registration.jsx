@@ -74,8 +74,8 @@ export default function Registration() {
         <div className="login">
         <form onSubmit={handleLogin}>
         <div>
-        <h1 className='p-3 gap-4 m-3 rounded-md text-3xl '>Existing Customer </h1>
-          <label htmlFor="loginId">Login ID</label>
+        <h1 className='p-3 gap-4 m-3 rounded-md text-3xl text-white '>Existing Customer </h1>
+          <label htmlFor="loginId" className='text-white'>Login ID</label>
           <input
             type="text"
             id="loginId"
@@ -88,7 +88,7 @@ export default function Registration() {
         </div>
 
         <div>
-          <label htmlFor="loginPassword">Login Password</label>
+          <label htmlFor="loginPassword" className='text-white'>Login Password</label>
           <input
             type="password"
             id="loginPassword"
@@ -108,8 +108,8 @@ export default function Registration() {
         <div className="signup">
         <form onSubmit={handleSubmit}>
         <div>
-          <h1 className='p-3 gap-4 m-3 rounded-md text-3xl '>New Customer ? </h1>
-          <label htmlFor="id">User ID</label>
+          <h1 className='p-3 gap-4 m-3 rounded-md text-3xl text-white'>New Customer ? </h1>
+          <label htmlFor="id" className='text-white'>User ID</label>
 
           <input
             type="number"
@@ -123,7 +123,7 @@ export default function Registration() {
         </div>
 
         <div>
-          <label htmlFor="password">Password</label>
+          <label htmlFor="password" className='text-white'>Password</label>
           <input
             type="password"
             id="password"
